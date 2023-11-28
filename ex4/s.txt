@@ -1,0 +1,25 @@
+ChronoCoin
+
+Vous avez très rapidement monté les échelons de la Brigade du Temps et vous vous retrouvez vite au commandement central. Vous avez été affecté à la lutte contre le ChronoGang, un groupe de méta humains qui utilisent leurs méta-sens criminellement.
+
+Pour analyser leurs actions, vous vous penchez sur les mouvements financiers des comptes en banque liés au groupe. Depuis vos visions, vous voyez que les transactions sont plus ou moins fréquentes : vous vous intéressez bien évidemment aux transactions les plus fréquentes, mais vous pressentez que les actions les moins fréquentes cachent aussi quelque chose.
+
+A partir d'une liste de transactions, trouvez la transaction la plus fréquente, et la moins fréquente. En cas d'égalité, prendre la plus grande des plus fréquentes et la plus petite des moins fréquentes.
+Données
+Entrée
+
+Ligne 1 : N entiers (représentant les transactions) compris entre 1 et 99 séparés par des espaces, avec 2 ≤ N ≤ 99.
+Sortie
+
+Votre programme devra renvoyer l'entier le plus fréquent moins l'entier le moins fréquent dans la liste. En cas d'égalité, prendre le plus grand des nombres apparaissant le plus de fois et le plus petit de ceux apparaissant le moins.
+
+Attention : le nombre en sortie peut être négatif.
+Exemples
+
+3 2 1 2 1 1
+
+Votre programme devra renvoyer pour cet exemple -2 : 1 est le nombre le plus fréquent et 3 le moins fréquent, d'où 1 - 3 = -2
+
+1 2 2 3 3 4
+
+1 et 4 apparaissent une fois, 2 et 3 apparaissent 2 fois. On prend donc le minimum de 1 et 4 et le maximum de 2 et 3, d'où la sortie attendue 3 - 1 = 2

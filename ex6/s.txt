@@ -1,0 +1,42 @@
+Indices temporels
+
+Tout le monde le sait à la Brigade, vous êtes un des plus brillants agents des rangs. A tel point que l'on vous a confié l'enquête sur la Chrono-Alliance : ce gang de méta-humains terrorise la Cité et arrive à brouiller les visions des agents de la Brigade en ajoutant des traces temporelles.
+
+Jusque-là, personne ne semblait pouvoir trouver le moindre indice sur eux, mais vous pensez avoir une piste : les traces qu'ils laissent semblent créer des états temporels impossibles. A partir des indices que vous trouvez sur les lieux de leurs crimes, vous remarquez effectivement qu'à partir d'un moment la liste d'indices ne peut plus correspondre à une réalité possible.
+
+Les états sont représentés par 5 voyants, pouvant être de 3 couleurs (rouge R, vert V ou bleu B). Les indices que vous trouvez sont flous : ils vous donnent 3 conditions dont au moins une est vraie mais pas forcément toute. Par exemple, l'indice R1 B2 V2 vous indique que le premier voyant est rouge, ou que le deuxième voyant est bleu, ou que le deuxième voyant est vert.
+
+Vous examinez les indices dans l'ordre : vous cherchez d'abord si un état des 5 voyants est possible avec le premier indice. Si oui, vous cherchez si un état est possible avec le premier ET le second indice, et ainsi de suite jusqu'à trouver le premier indice qui, s'il est pris en compte, rend impossible
+
+Écrivez un programme qui prend en entrée une liste d'indices, et renvoie l'indice maximum à partir duquel il existe toujours un état possible.
+Données
+Entrée
+
+Ligne 1 : le nombre N d'indices, avec 8 ≤ N ≤ 30 Lignes 2 à N+1 : la liste d'indices au format avec 3 conditions séparées par des espaces, chaque condition représentée par une couleur sur une lettre (R, V ou B), et un entier entre 1 et 5 donnant le numéro du voyant.
+
+Par exemple, l'indice R1 B2 V2 vous indique que le premier voyant est rouge, ou que le deuxième voyant est bleu, ou que le deuxième voyant est vert.
+Sortie
+
+Un entier représentant le nombre maximum d'indices d'affilés qui peuvent représenter un état des 5 voyants.
+
+Note : si une combinaison de voyants existe qui satisfait tous les indices, votre programme devra renvoyer N.
+Exemples
+
+8
+R5 R3 R1
+B1 V5 V5
+B3 R5 B3
+V1 V1 B4
+V4 V1 R4
+V1 R5 V3
+R2 B1 R2
+R3 B3 R4
+
+La combinaison BVVBR satisfait les 4 premières conditions. En effet :
+
+    R5 est satisfait pour le premier indice
+    B1 pour le second
+    R5 pour le troisième
+    B4 pour le quatrième
+
+En revanche, il n'existe aucune combinaison satisfaisant les 5 premiers indices. Votre programme devra donc renvoyer 4

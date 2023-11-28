@@ -1,0 +1,43 @@
+La meilleure protection
+
+Vous vous faites vite remarquer au sein de la Brigade. Depuis vos exploits sur le précédent challenge, vous avez été un des éléments les plus prometteurs de l'Ordre. Mais durant vos missions, vous avez remarqué qu'un méta-humain très puissant va plus vite que vous, et anticipe encore mieux que la Brigade certaines catastrophes...
+
+Vous n'en parlez pas encore à votre direction, mais vous lancez vos recherches sur ce mystérieux bienfaiteur inconnu de la Brigade. Dans votre quête, vous remarquez un motif étrange : il semblerait que celui-ci se déplace en portant secours à ceux qui en ont le plus besoin.
+
+Pour commencer vos recherches, vous décidez de vous concentrer uniquement sur le projet de protection des villes spatiales. Ces villes sont composées de 2 types de modules : les modules d'habitation et les modules de contrôle, et chaque module peut en protéger un ou plusieurs autres. Il n'y a jamais de cycles dans la relation de protection (par exemple, si A protège B et B protège C, alors C ne protège pas A).
+
+Les modules protégeant au moins un autre module sont des modules de contrôle, et ceux n'en protégeant aucun autre sont des modules d'habitation. Trouvez, dans la ville, le contrôleur contrôlant le plus de modules d'habitation pour connaître le quartier pouvant protéger le plus d'habitants à la fois.
+Données
+Entrée
+
+Ligne 1 : Deux entiers N et V indiquant combien il y a de relations de protection et combien de modules (numérotés de 0 à V-1)
+
+N lignes suivantes : Deux entiers a et b indiquant que le module a protège le module b
+
+1 ≤ N < V ≤ 11 000
+Sortie
+
+Ligne 1 Un entier indiquant le contrôleur gérant le plus de modules d'habitation.
+Exemple
+
+Pour l'entrée :
+
+8 10
+8 4
+7 2
+6 8
+6 1
+7 9
+6 7
+2 0
+5 3
+
+La solution est :
+
+6
+
+La première ligne indique 8 relations et 10 modules numérotés de 0 à 9. Ici le module 6 contrôle 4 modules d'habitations (0, 1, 4, 9), alors que le contrôleur 5 n'en contrôle qu'un seul (3). C'est donc 6 qu'il faut répondre.
+
+https://freeimage.host/i/graphviz.HCkDTZX
+
+Notons qu'il existe toujours une unique solution possible dans les entrées proposées.

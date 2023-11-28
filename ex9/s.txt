@@ -1,0 +1,58 @@
+On avait dit 3 parts
+
+Après la très fructueuse opération de démantèlement de la Chrono-Alliance, votre brigade mérite bien une célébration !
+
+À l'occasion de votre remise du prix de bravoure et de service de la brigade, votre chef a préparé un magnifique gâteau et c'est à vous de faire le service.
+
+Comme le veut la tradition, la première découpe doit se faire à la verticale et découper le gâteau en trois parts égales. Cette découpe est facile à accomplir sur une forme simple, mais le chef a pris quelques libertés créatives sur la forme du gâteau, et vous avez devant vous un amas informe recouvert de glaçage...
+
+Pour ne pas décevoir votre équipe et impressionner le chef avec vos capacités de découpe hors norme (après tout, c'est vous qui avez été désigné), vous souhaitez écrire un programme qui calcule l'emplacement précis des deux découpes, à partir de la forme du gâteau.
+
+https://iili.io/H0EK30u.md.png
+
+Vous remarquez que le contour du gâteau peut être modélisé selon deux lignes brisées (bord supérieur et bord inférieur) dont les abscisses sont strictement monotones. Le bord supérieur comporte uniquement des ordonnées positives, et le bord inférieur seulement des ordonnées négatives. Les deux points extrêmes à gauche et à droite sont donc sur l'axe horizontal.
+
+À quel endroit devez-vous effectuer les découpes pour séparer le gâteau en trois parts de superficie identique ?
+Données
+Entrée
+
+Ligne 1 : Un entier A : le nombre de points sur le bord supérieur.
+
+Les A lignes suivantes : Deux entiers X et Y représentant les coordonnées d'un point sur le bord supérieur du gâteau.
+
+Ligne 1 : Un entier B : le nombre de points sur le bord inférieur.
+
+Les B lignes suivantes : Deux entiers X et Y représentant les coordonnées d'un point sur le bord inférieur du gâteau.
+
+Les coordonnées des deux bords sont données de gauche à droite (coordonnée X croissante), et leurs deux extrémités seront identiques.
+
+Les coordonnées sont comprises entre -10^6 et 10^6. Il y a au maximum 1000 points sur chaque bord.
+Sortie
+
+Votre programme devra afficher l'abscisse des deux découpes, une sur chaque ligne.
+
+Les deux nombres sont à afficher sous forme décimale, une tolérance absolue de 10^-6 sera appliquée.
+Exemple
+
+L'exemple ci-dessous correspond à l'image présentée en début d'énoncé.
+
+Entrée
+
+5
+2 0
+6 4
+7 3
+10 5
+12 0
+4
+2 0
+4 -4
+11 -4
+12 0
+
+Sortie
+
+6.10485381178
+8.85920709431
+
+Note : les résultats ci-dessus sont donnés avec une précision plus élevée que nécessaire. Votre code peut afficher autant de décimales que vous le souhaitez, tant que votre réponse se situe dans la tolérance de 10^-6.

@@ -1,0 +1,46 @@
+Terrain glissant
+
+Vous avez trouvé la planque de la Chrono-Alliance !! Vous aviez vu juste avec les indices, ils vous ont directement mené à eux. Vous mobilisez votre équipe et foncez les arrêter. Vous plongez dans l'Ether, espace que seuls les méta-humains peuvent pénétrer. L'Alliance s'y cache !
+
+L'Ether a une particularité : vous pouvez vous déplacer dans toutes les 4 directions de cet espace à 2 dimensions, mais une fois une direction choisie il n'y a que 2 moyens de s'arrêter. Si votre chemin passe par un Grip temporel, votre chemin s'arrêtera dessus et vous pouvez repartir dans les 4 directions. Il existe également des Obstacles temporels, qui sont impénétrables et qui arrêteront votre chemin.
+
+A partir de la carte de l'Ether, trouvez le chemin le plus court entre vous et la planque de l'Alliance !
+Données
+Entrée
+
+Ligne 1 : deux entiers séparés par un espace, H et W la hauteur et la largeur de la grille
+
+H lignes suivantes : Une ligne de la grille de l'Ether comportant exactement W caractères.
+
+    # est une obstacle temporel (zone infranchissable)
+
+    . est une zone libre (zone permettant le mouvement)
+
+    o est un grip temporel (on doit s'y arrêter lorsqu'on passe dessus)
+
+    P est votre position initiale (la case est une zone libre)
+
+    X est la planque de l'Alliance (la case est une zone libre)
+
+H et W sont compris entre 5 et 100
+
+L'Ether est toujours entouré par un bord d'obstacles infranchissables.
+Sortie
+
+Votre programme devra afficher le nombre minimum de mouvements nécessaires pour parvenir à la planque. Cette valeur existe toujours.
+Exemple
+
+Entrée
+
+5 7
+#######
+#..#.##
+#..Xo.#
+#P#o.##
+#######
+
+Sortie
+
+7
+
+Ici le chemin le plus court pour parvenir à la planque consiste à aller d'abord vers le haut (on glisse de 2 cases) puis vers la droite (1 case), puis vers le bas (1 case). On a déjà fait 3 mouvements. On doit alors se diriger vers la droite. On passe sur la planque mais attention, c'est une zone libre donc on ne s'y arrête pas (raté !) mais on s'arrête sur le grip temporel sur la case suivante. On va ensuite vers le bas (1 case), vers la gauche (1 case sur le grip), et enfin on va vers le haut pour s'arrêter sur la planque. Nous avons eu donc besoin de 7 mouvements pour arriver à destination, il n'existe pas de chemin plus court depuis la position initiale.

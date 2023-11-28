@@ -1,0 +1,38 @@
+Opération discrétion
+
+En préparation pour votre raid sur la planque d'un gang de chrono-criminels, vous devez faire appel à des équipes de mercenaires pour vous assurer d'être en effectif suffisant.
+
+Mais attention : impossible de recruter tout le monde, cela risquerait d'attirer l'attention des criminels, et vous risqueriez aussi d'exploser le budget de la brigade ! Il va donc falloir jouer finement, en choisissant bien les équipes de mercenaires que vous allez contacter.
+
+Pour éviter que vos adversaires ne puissent vous surprendre en faisant appel à des mercenaires, vous souhaitez avoir strictement plus de la moitié des combattants disponibles. Ainsi, même si les criminels recrutent tous les mercenaires disponibles restants, vous serez toujours en supériorité numérique. Les mercenaires sont organisés en groupes, et vous cherchez à savoir quels groupes vous devrez recruter.
+
+Votre brigade dispose déjà de quelques officiers pour le raid, ce qui vous permet de partir avec une base solide d'effectifs. Combien de mercenaires au minimum devrez-vous embaucher pour vous assurer d'avoir l'avantage pendant le raid ?
+Données
+Entrée
+
+Ligne 1 : un entier N compris entre 0 et 1 000 000 représentant le nombre d'effectifs disponibles de votre brigade.
+
+Ligne 2 : un entier M compris entre 0 et 100 représentant le nombre d'équipes de mercenaires disponibles.
+
+M lignes suivantes : M entiers compris entre 0 et 1 000 représentant la taille de chaque groupe de mercenaires.
+Sortie
+
+Votre programme devra afficher le nombre minimum de mercenaires à recruter pour vous assurer d'avoir l'avantage durant le raid.
+Exemple
+
+247
+7
+178
+168
+66
+158
+60
+113
+227
+
+Vous disposez de 247 officiers, auxquels vous pourrez ajouter 385 mercenaires (227 + 158) pour un total de 632 personnes de votre côté.
+
+Dans ce cas, les criminels pourront recruter au maximum les 585 mercenaires restants (178 + 168 + 66 + 60 + 113), ce qui vous place en supériorité numérique.
+
+385 est le nombre minimum de recrutements qui vous permettra d'être en majorité, votre code devra donc afficher 385.
+

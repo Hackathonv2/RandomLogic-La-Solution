@@ -1,0 +1,48 @@
+Prévision de tempête solaire
+
+Comme vous le savez sûrement, le plus grand danger pour une infrastructure quantique est l'arrivée soudaine d'une éruption solaire.
+
+Grâce au téléscope qui traîne au fond de votre jardin, vous avez pu observer le soleil pendant de longues journées et avez déduit un motif très intéressant : les taches solaires apparaissent et disparaissent d'une manière erratique, mais à l'approche d'une éruption vous remarquez que certaines taches apparaissent toujours dans le même ordre !
+
+Afin de mieux prévoir les tempêtes solaires qui menacent votre infrastructure, vous souhaitez écrire un algorithme qui prend en entrée deux observations successives, et trouver les taches solaires qui sont communes aux deux. Si ces taches figurent dans le même ordre, on risque une éruption imminente !
+Données
+Entrée
+
+Ligne 1 : une chaîne S1 de lettres représentant le premier motif d'activité solaire. Ligne 2 : une chaîne S2 de lettres représentant le second motif d'activité solaire.
+Sortie
+
+Si les points communs entre S1 et S2 figurent dans le même ordre entre les deux motifs, affichez deux lignes :
+
+    Sur la première ligne, la chaîne de caractères "TEMPETE"
+    Sur la suivante, les caractères communs entre S1 et S2, dans l'ordre d'apparition
+
+S'il n'y a pas de points communs ou que ceux-ci ne sont pas dans le même ordre, affichez NORMAL sur une ligne.
+Contraintes
+
+    Les caractères sont uniques au sein de chaque chaîne.
+    Les caractères sont des lettres majuscules ou minuscules.
+
+Exemple
+
+Pour l'entrée :
+
+SmXwpKz
+meXZKi
+
+Trois lettres apparaissent en commun : m, X et K. Comme elles apparaissent dans l'ordre mXK dans S1 et S2, une tempête est imminente et vous devez afficher :
+
+TEMPETE
+mXK
+
+Notez que les taches solaires z et Z sont considérées comme différentes.
+Exemple 2
+
+Pour l'entrée :
+
+LMepmWsAO
+kMrTpOmzIf
+
+Ici, les éléments communs sont M, p, m et O. Cependant, ils apparaissent dans S1 dans l'ordre MpmO et dans S2 dans un autre ordre MpOm. Ainsi, il n'y a pas d'activité anormale et vous devez afficher :
+
+NORMAL
+
